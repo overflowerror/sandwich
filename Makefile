@@ -14,7 +14,7 @@ a:
 	@echo -n
 
 sandwich:
-	@if test "$(counter)" = "a b c"; then  if test "$(id -u)" = "0"; then echo "Okay."; else echo "What? Make it yourself."; fi; else echo "sry, I can't unterstand you."; fi
+	@if test "$(counter)" = "a b c"; then  if test "$$(id -u)" = "0"; then echo "Okay."; else echo "What? Make it yourself."; fi; else echo "sry, I can't unterstand you."; fi
 
 sandwich,: sandwich
 
